@@ -110,7 +110,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+# source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Aliases
 alias s="sudo"
@@ -124,7 +124,13 @@ alias cnea="npx create-nodejs-express-app"
 alias cra="npx create-react-app"
 alias Data="cd /run/media/ntl870/Data"
 alias Windows="cd /run/media/ntl870/Windows"
-alias killport="sh ~/.config/awesome/autostart/killport.sh"
+alias killport="sh ~/scripts/killport.sh"
 alias gpull="git pull"
 alias v="vim"
 alias sleep="systemctl suspend"
+alias yd="yarn dev"
+alias ys="yarn start"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
