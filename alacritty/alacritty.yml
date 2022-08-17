@@ -752,7 +752,7 @@ window:
     x: 20
     y: 20
   dynamic_padding: true
-  opacity: 0.55
+  opacity: 0.95
 
 colors:
   # Default colors
